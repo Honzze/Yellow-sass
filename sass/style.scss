@@ -1,0 +1,317 @@
+@mixin paddingButton {
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+@mixin title{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+@mixin numbertext {
+    color:white;
+    font-size: 70px;
+    text-align:center;
+    font-size: 80px;
+    font-weight: bold;
+}
+@mixin numberparagraph {
+    color:white;
+    font-size: 20px;
+    text-align:center;
+    font-weight: bold;
+}
+body {
+    background: rgb(253, 248, 248);
+}
+header{
+    background-image: url(./images/bkg-hero-header.jpg);
+    height: 800px;
+    .logo{
+        display: flex;
+        justify-content: space-around;
+        width: 150px;
+        height: 50px;
+        margin-left: 200px;
+    }
+    h1{
+        margin-top: 100px;
+        display: flex;
+        font-size: 120px;
+        color: white;
+        justify-content: center;
+        span{
+            color: orange;
+            font-size: 120px;
+            
+        }
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        a{
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px;
+        }
+    }
+    p, h5{
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-overflow: ellipsis;
+    }
+    .doublebutton{
+        display: flex;
+        justify-content: center;
+        & .btn1{
+            @include paddingButton();
+            margin-right: 30px;
+            border: 2px solid;
+            background: #2625257c;
+            border-color: white;
+            color:white;
+        }
+        & .btn2{
+            @include paddingButton();
+            background:orange;
+            color: white;
+        }
+    }
+    
+}
+.about{
+    h1{
+        @include paddingButton();
+        @include title();
+        color: #555455;
+        margin-top: 50px;
+    }
+    p{
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
+        margin-bottom:150px;
+    }
+    h2{
+        @include paddingButton();
+        @include title();
+        color: #555455;
+    }
+    h3{
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+}
+.testimonials{
+    background-image: url(./images/bkg-testimonial.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    h1{
+        @include paddingButton();
+        @include title();
+        color: white;
+        font-size: 40px;
+    }
+    img{
+        display: block;
+        margin: 0px auto;
+        border-radius: 50%;
+    }
+    p{
+        @include paddingButton();
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top:70px ;
+        background-color: #694b87;
+        color:white;
+
+    }
+    h2{
+        @include paddingButton();
+        font-weight: bold;
+        display: flex;
+        justify-content: center;        
+        color: white;
+    }
+    h3{
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        margin:10px;
+        margin-bottom: 50px;
+    }
+}
+.services{
+    h1{
+        @include title();
+        color: #555455;
+
+    }
+    h2{
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    p{
+        color:darkslategray;
+        display: flex;
+        justify-content: center;   
+        margin-bottom: 60px;
+        margin: 15px;  
+    }
+    .text1{
+        color:#EF9E80; 
+    }
+    .text2{
+        color:#F4C73A; 
+    }
+    .text3{
+        color:#875B8A; 
+    }
+    .groupeservice{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+}
+.latestnews{
+    background-color:#222F36;
+    padding: 30px;
+    h1{
+        color: azure;
+        @include title();
+    }
+    button{
+        @include paddingButton();
+    }
+    .card1{
+        display: flex;
+        justify-content: center;
+        .onecard{
+            margin: 15px;
+        }
+    }
+
+
+
+}
+.number{
+    background-image: url(/images/bkg-counter.jpg);
+    background-position:center ;
+    .groupenumber{
+        justify-content: space-around;
+        margin-left: 15%;
+        margin-right: 15%;
+
+        
+    }
+    .text1{
+        @include numbertext();
+        margin: 30px;
+        p{
+            @include numberparagraph();
+        }
+    }
+    .text2{
+        @include numbertext();
+        margin: 30px;
+        border-left: white 0.5px solid;
+        border-right: white 0.5px solid; 
+        padding-left:100px ;
+        padding-right:100px ;
+
+        p{
+            @include numberparagraph();
+        }
+    }
+    .text3{
+        @include numbertext();
+        margin: 30px;
+        p{
+            @include numberparagraph();
+        }
+    }
+}
+
+.contact{
+    h1{
+        @include title();  
+        color: #555455;
+    }
+    .groupecontact{
+        justify-content: start;
+        margin-left: 300px;
+        .text1{
+            margin: 40px;
+            h2{
+                color: orange;
+            }
+        }
+        .text2{
+            margin: 40px;
+            h2{
+                color: orange;
+            }
+        }
+    }
+}
+.container{
+    display: flex;
+    justify-content: start;
+    .groupecontact{
+        max-width: 70px;
+        max-height: 20px;
+        margin-bottom:70px ;
+        margin-left:500px ;
+    }
+    label{
+        margin-right: 20px;
+    }
+    input{
+        border: #a1a1a1 0.5px solid;
+        padding: 8px;
+        margin: 5px;
+        background-color:rgb(237, 237, 237);
+    }
+    
+}
+.message{
+    display: flex;
+    justify-content: center;
+    input{
+        border: #a1a1a1 0.5px solid;
+        padding: 8px;
+        margin: 5px;
+        background-color:rgb(237, 237, 237);
+        display: flex;
+        justify-content: center;
+        width: 600px;
+        height: 300px;
+
+    }
+}
+
+footer{
+    background-color:rgb(32, 30, 30);
+    display: flex;
+    justify-content: space-around;
+    h2{
+        @include title();
+        color:white;
+        margin: 40px;
+    }
+    li{
+        color:rgb(79, 79, 79);
+        margin: 10px;
+    }
+}

@@ -1,0 +1,350 @@
+body {
+  background: rgb(253, 248, 248);
+}
+
+header {
+  background-image: url(./images/bkg-hero-header.jpg);
+  height: 800px;
+}
+header .logo {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  height: 50px;
+  margin-left: 200px;
+}
+header h1 {
+  margin-top: 100px;
+  display: flex;
+  font-size: 120px;
+  color: white;
+  justify-content: center;
+}
+header h1 span {
+  color: orange;
+  font-size: 120px;
+}
+header .menu {
+  display: flex;
+  justify-content: center;
+}
+header .menu a {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px;
+}
+header p, header h5 {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-overflow: ellipsis;
+}
+header .doublebutton {
+  display: flex;
+  justify-content: center;
+}
+header .doublebutton .btn1 {
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-right: 30px;
+  border: 2px solid;
+  background: rgba(38, 37, 37, 0.4862745098);
+  border-color: white;
+  color: white;
+}
+header .doublebutton .btn2 {
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background: orange;
+  color: white;
+}
+
+.about h1 {
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  color: #555455;
+  margin-top: 50px;
+}
+.about p {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.about h2 {
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  color: #555455;
+}
+.about h3 {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.testimonials {
+  background-image: url(./images/bkg-testimonial.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+.testimonials h1 {
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  color: white;
+  font-size: 40px;
+}
+.testimonials img {
+  display: block;
+  margin: 0px auto;
+  border-radius: 50%;
+}
+.testimonials p {
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 70px;
+  background-color: #694b87;
+  color: white;
+}
+.testimonials h2 {
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.testimonials h3 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+.services h1 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  color: #555455;
+}
+.services h2 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.services p {
+  color: darkslategray;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin: 15px;
+}
+.services .text1 {
+  color: #EF9E80;
+}
+.services .text2 {
+  color: #F4C73A;
+}
+.services .text3 {
+  color: #875B8A;
+}
+.services .groupeservice {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.latestnews {
+  background-color: #222F36;
+  padding: 30px;
+}
+.latestnews h1 {
+  color: azure;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+}
+.latestnews button {
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.latestnews .card1 {
+  display: flex;
+  justify-content: center;
+}
+.latestnews .card1 .onecard {
+  margin: 15px;
+}
+
+.number {
+  background-image: url(/images/bkg-counter.jpg);
+  background-position: center;
+}
+.number .groupenumber {
+  justify-content: space-around;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.number .text1 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 30px;
+}
+.number .text1 p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.number .text2 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 30px;
+  border-left: white 0.5px solid;
+  border-right: white 0.5px solid;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.number .text2 p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.number .text3 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 30px;
+}
+.number .text3 p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact h1 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  color: #555455;
+}
+.contact .groupecontact {
+  justify-content: start;
+  margin-left: 300px;
+}
+.contact .groupecontact .text1 {
+  margin: 40px;
+}
+.contact .groupecontact .text1 h2 {
+  color: orange;
+}
+.contact .groupecontact .text2 {
+  margin: 40px;
+}
+.contact .groupecontact .text2 h2 {
+  color: orange;
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+}
+.container .groupecontact {
+  max-width: 70px;
+  max-height: 20px;
+  margin-bottom: 70px;
+  margin-left: 500px;
+}
+.container label {
+  margin-right: 20px;
+}
+.container input {
+  border: #a1a1a1 0.5px solid;
+  padding: 8px;
+  margin: 5px;
+  background-color: rgb(237, 237, 237);
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+}
+.message input {
+  border: #a1a1a1 0.5px solid;
+  padding: 8px;
+  margin: 5px;
+  background-color: rgb(237, 237, 237);
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 300px;
+}
+
+footer {
+  background-color: rgb(32, 30, 30);
+  display: flex;
+  justify-content: space-around;
+}
+footer h2 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  color: white;
+  margin: 40px;
+}
+footer li {
+  color: rgb(79, 79, 79);
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
